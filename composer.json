@@ -1,0 +1,21 @@
+{
+    "name": "lukaszone0/sfapi",
+    "description": "Api writen in php to play online game Shakes&Fidget without GUI",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lukaszone0\\Sfapi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lukasz",
+            "email": "lukaszone0@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "php": "5.2.0"
+    }
+}

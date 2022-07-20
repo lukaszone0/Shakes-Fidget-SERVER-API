@@ -1,27 +1,24 @@
 <?php
 /**
  * <pre>
- * SFApi 2.0
+ * SFApi 1.0
  * client class
- * Last Updated: $Date: 2021-02-17
+ * Last Updated: $Date: 2022-07-20
  * </pre>
  *
- * @author 		Łukasz G.
+ * @author 		lukaszone0
  * @package		SFApi
- * @version		2.0
+ * @version		1.0
  *
  */
 
 namespace SFBOT;
 
-
 class client{
 
     private $salt = "ahHoj2woo1eeChiech6ohphoB7Aithoh"; // DEF PASSWORD SALT
     private $logincount = 0;
-
-    //public $lvl, $exp, $mush, $silver, $status, $statusextra, $statustime, $quests = array(array(), array(), array()), $thirst, $beers, $timestamp, $timeglass; 
-
+    
     public function init($oko){
 
         global $resp, $clientip;
@@ -180,7 +177,7 @@ class client{
                 $server = $oko->server;
 
 				if(isset($oko->skiptype) and $oko->skiptype != 1 and $oko->skiptype != 2 and $oko->skiptype != 0){
-                    // 1 = mush 2 = klepsydra 
+                    // 1 = mush // 2 = timeglass
 					$resp->message = "missing valid skip type";
 					break;
                 }

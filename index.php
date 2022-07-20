@@ -1,14 +1,14 @@
 <?php
 /**
  * <pre>
- * SFApi 2.0
+ * SFApi 1.0
  * index file
- * Last Updated: $Date: 2021-02-17
+ * Last Updated: $Date: 2022-07-20
  * </pre>
  *
- * @author 		Łukasz G.
+ * @author 		lukaszone0
  * @package		SFApi
- * @version		2.0
+ * @version		1.0
  *
  */
 
@@ -16,8 +16,6 @@ namespace SFBOT;
 
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
-
-//session_start();
 
 $clientip = $_SERVER['REMOTE_ADDR'];
 
@@ -43,8 +41,6 @@ if(!isset($oko->act)){
 
 $client = new client();
 $client->init($oko);
-
-
 
 exit(json_encode($resp));
 ?>
