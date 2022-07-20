@@ -3,12 +3,10 @@ Written in 2020. Last update 2022..will be no more updates....
 
 With this api we can bypass the game GUI.
 
-For example:
-
 You can login into game without using browser.
 Just use a HTTP method GET (address where your api is installed) to login or download any data from game server:
 
-EXAMPLE:
+FOR EXAMPLE:
 
 ![screenshot 2022-06-18 (2)](https://user-images.githubusercontent.com/107623411/174456321-96b98333-2df4-4c29-a63f-507ea0f7dae2.jpg)
 
